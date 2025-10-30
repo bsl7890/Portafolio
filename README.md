@@ -39,7 +39,7 @@ Santiago, Chile 🇨🇱
 
 ## 📧 Contacto
 
-📩 **Email:** [benjamin santander](benjamin.santander.lopez.2016@gmail.com)
+📩 **Email:** benjamin.santander.lopez.2016@gmail.com
 💻 **GitHub:** [bsl7890](https://github.com/bsl7890)
 
 ---
