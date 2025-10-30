@@ -50,3 +50,4 @@ Este proyecto está licenciado bajo la [Apache License 2.0](./LICENSE).
 Puedes utilizar y modificar el código libremente, siempre que mantengas los créditos correspondientes.  
 
 © 2025 **Benjamín Santander**
+
