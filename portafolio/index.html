@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio • Benjamín Santander</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <!-- Welcome Modal -->
+  <div id="welcomeModal" class="welcome-modal">
+    <div class="modal-content">
+      <h2>Portafolio de Benjamín Santander</h2>
+      <p>¡Bienvenido a mi portafolio profesional! Soy un desarrollador web chileno de 18 años, apasionado por la programación y la creación de soluciones innovadoras.</p>
+      <button class="btn-enter" onclick="closeWelcomeModal()">Entrar al Portafolio</button>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Benjamín Santander</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses" data-i18n="nav.courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+
+          <!-- Language Dropdown -->
+          <li class="nav-item dropdown ms-lg-3">
+            <a class="nav-link dropdown-toggle" href="#" id="langMenu" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langMenu">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')">
+                <span class="flag-icon me-2">🇪🇸</span>Español
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">
+                <span class="flag-icon me-2">🇺🇸</span>English
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('ja')">
+                <span class="flag-icon me-2">🇯🇵</span>日本語
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('ko')">
+                <span class="flag-icon me-2">🇰🇷</span>한국어
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('zh')">
+                <span class="flag-icon me-2">🇨🇳</span>中文
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')">
+                <span class="flag-icon me-2">🇷🇺</span>Русский
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">
+                <span class="flag-icon me-2">🇩🇪</span>Deutsch
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('fr')">
+                <span class="flag-icon me-2">🇫🇷</span>Français
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('pt')">
+                <span class="flag-icon me-2">🇧🇷</span>Português
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('it')">
+                <span class="flag-icon me-2">🇮🇹</span>Italiano
+              </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+        <h1 id="home-title" data-i18n="home.title">Hola, soy <span>Benjamín Santander</span></h1>
+        <p id="home-subtitle" data-i18n="home.subtitle">Desarrollador Web • Estudiante de Programación</p>
+      <div class="mt-3">
+        <a class="btn btn-hero btn-outline-hero" href="#contact" data-i18n="home.contact">Contactar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="bg-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <div class="position-relative d-inline-block">
+              <img src="static/img/perfil.png" alt="Foto de Benjamín" class="rounded-circle img-fluid border border-4 border-primary shadow" width="300">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="lead" data-i18n="about.text">Soy estudiante de 4° medio en el Liceo Vate Vicente Huidobro, especializado en Programación. Me apasiona el desarrollo web y crear soluciones con Python y JavaScript.</p>
+            <p data-i18n="about.info">Edad: 18 años | Fecha de nacimiento: 27/04/2007 | Nacionalidad: Chileno</p>
+            <p data-i18n="about.location">Ubicación: Las Azalas 0820, Chile | Teléfono: +56 9 6650 6919 | RUT: 22.384.522-3</p>
+            
+            <h4 class="mt-4" data-i18n="about.career">Mi carrera como Desarrollador Web</h4>
+            <p data-i18n="about.career.text">Desde que tengo memoria, siempre he admirado el potencial de la tecnología y he estado interesado en aprender más sobre ella. Después de comenzar mis estudios especializados en programación, tuve la oportunidad de desarrollar mis primeros proyectos y me inspiré por la capacidad de convertir ideas en realidad.</p>
+            
+            <h4 class="mt-4" data-i18n="about.first">Mi primer proyecto</h4>
+            <p data-i18n="about.first.text">Eventualmente, comencé a tomar clases de programación y creé mi primer proyecto utilizando Python. Fue un proyecto de análisis de datos que completé extrayendo información de un sistema escolar. Fue una experiencia que cambió mi vida. Decidí convertirme en Desarrollador Web y hacer realidad más de mis ideas soñadas.</p>
+            
+            <button class="btn btn-outline-secondary mt-3" onclick="toggleDetails(this)" data-i18n="about.more">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="bg-white">
+      <div class="container">
+        <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+        <p class="text-center mb-5" data-i18n="skills.subtitle">Habilidades principales que he adquirido hasta ahora</p>
+        
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="skill-category">
+              <h4 data-i18n="skills.languages">Lenguajes</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="skill-category">
+              <h4 data-i18n="skills.frontend">Front End</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="skill-category">
+              <h4 data-i18n="skills.frameworks">Frameworks & Bibliotecas</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">jQuery</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="skill-category">
+              <h4 data-i18n="skills.databases">Bases de Datos</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">SQLite</span>
+                <span class="skill-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="skill-category">
+              <h4 data-i18n="skills.tools">Herramientas</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Linux</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="skill-category">
+              <h4 data-i18n="skills.concepts">Conceptos</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">RESTful API</span>
+                <span class="skill-tag">CRUD</span>
+                <span class="skill-tag">Programación Orientada a Objetos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EDUCATION -->
+    <section id="education" class="bg-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="education.title">Education</h2>
+        <p class="text-center mb-5" data-i18n="education.subtitle">Bootcamp completado, estudios secundarios especializados</p>
+        
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="custom-card">
+              <div class="card-body">
+                <h5 class="card-title">4° Medio - Liceo Vate Vicente Huidobro</h5>
+                <p class="timeline-date">2022 - 2025</p>
+                <p class="card-text">Especialidad en Programación. Santiago, Chile</p>
+                <ul class="mt-3">
+                  <li>Desarrollo de proyectos full-stack con Python y bases de datos</li>
+                  <li>Implementación de aplicaciones web con HTML, CSS y JavaScript</li>
+                  <li>Estudio de estructuras de datos y algoritmos básicos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mb-4">
+            <div class="custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Cursos Complementarios</h5>
+                <p class="timeline-date">2023 - 2024</p>
+                <ul class="mt-3">
+                  <li>Curso de Python (interno, 2024)</li>
+                  <li>Introducción a Bases de Datos (MySQL)</li>
+                  <li>Desarrollo Web con HTML/CSS</li>
+                  <li>Fundamentos de JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="bg-white">
+      <div class="container">
+        <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+        <p class="text-center mb-5" data-i18n="experience.subtitle">Experiencia en desarrollo de proyectos escolares</p>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <h5>Desarrollador Full-Stack - Proyecto BADMA</h5>
+            <div class="timeline-date">2024 - Presente</div>
+            <p>Desarrollo full-stack con Python y SQLite. Integración de CRUD y reportes para sistema de gestión escolar.</p>
+          </div>
+          
+          <div class="timeline-item">
+            <h5>Investigador - Green Horizon</h5>
+            <div class="timeline-date">2023 - 2024</div>
+            <p>Investigación escolar sobre hábitos alimenticios en escolares (ODS 12). Recolección y análisis de datos.</p>
+          </div>
+          
+          <div class="timeline-item">
+            <h5>Desarrollador Web - Sistema de Ventas</h5>
+            <div class="timeline-date">2023</div>
+            <p>Desarrollo de sistema de ventas con Python, MySQL y Tkinter. Implementación de funcionalidades CRUD.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- COURSES -->
+    <section id="courses" class="bg-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="courses.title">Courses</h2>
+        <p class="text-center mb-5" data-i18n="courses.subtitle">Algunos de los cursos que he completado</p>
+        
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Udemy</h5>
+                <ul class="mt-3">
+                  <li>Python para principiantes</li>
+                  <li>Desarrollo Web Completo</li>
+                  <li>JavaScript Moderno</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Cursos Escolares</h5>
+                <ul class="mt-3">
+                  <li>Programación en Python</li>
+                  <li>Bases de Datos Relacionales</li>
+                  <li>Desarrollo Web con HTML/CSS</li>
+                  <li>Fundamentos de JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="bg-white">
+      <div class="container">
+        <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+        <p class="text-center mb-5" data-i18n="portfolio.subtitle">Mis proyectos recientes</p>
+        
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-danger" onclick="deleteSelectedProject()" id="deleteSelectedBtn" style="display: none;">
+            <i class="fas fa-trash"></i> Eliminar Seleccionado
+          </button>
+        </div>
+        
+        <div id="portfolio-container">
+          <div class="portfolio-empty">
+            <h3 data-i18n="portfolio.empty">Actualmente no tengo proyectos publicados.</h3>
+            <button class="btn btn-add-example" onclick="addExampleProject(this)" data-i18n="portfolio.add">Agregar ejemplo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
+        <p class="text-center mb-5" data-i18n="contact.subtitle">Por favor no dudes en contactarme</p>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form id="contact-form" onsubmit="sendMessage(event)">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" class="form-control" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+            </form>
+            <div id="form-feedback" class="mt-3" aria-live="polite"></div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5">
+          <div class="mb-3">
+            <i class="fas fa-envelope me-2 text-primary"></i>
+            <a href="mailto:benjamin.santander.lopez.2016@gmail.com" class="text-decoration-none">benjamin.santander.lopez.2016@gmail.com</a>
+          </div>
+          <div class="mb-3">
+            <i class="fab fa-github me-2 text-dark"></i>
+            <a href="https://github.com/bsl7890" class="text-decoration-none">github.com/bsl7890</a>
+          </div>
+          <div class="mb-3">
+            <i class="fas fa-phone me-2 text-success"></i>
+            <span>+56 9 6650 6919</span>
+          </div>
+          <div class="mb-3">
+            <small class="text-muted">Profesor: Mauricio Medel</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light text-dark">
+    <div class="container">
+      <p>© <span id="year"></span> Benjamín Santander</p>
+      <p class="mb-0">Portafolio Profesional - Liceo Vate Vicente Huidobro</p>
+      <p class="mb-0">RUT: 22.384.522-3 | Edad: 18 años</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/main.js" >
+
+    </script>
+</body>
+</html>
+

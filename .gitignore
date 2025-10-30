@@ -43,3 +43,4 @@ __pycache__/
 # 🎨 ARCHIVOS DE COMPILACIÓN SCSS (si se usa)
 *.sass-cache/
 *.scssc
+
