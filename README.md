@@ -34,14 +34,12 @@ Está construido con tecnologías web fundamentales, manteniendo una estructura 
 
 **Liceo Vate Vicente Huidobro**  
 Especialidad en **Programación** – 4° Medio  
-Profesor guía: **Mauricio Medel**  
-Santiago, Chile 🇨🇱  
-
+Santiago, Chile 🇨🇱
 ---
 
 ## 📧 Contacto
 
-📩 **Email:** benjamin.santander.lopez.2016@gmail.com  
+📩 **Email:** [benjamin santander](benjamin.santander.lopez.2016@gmail.com)
 💻 **GitHub:** [bsl7890](https://github.com/bsl7890)
 
 ---
